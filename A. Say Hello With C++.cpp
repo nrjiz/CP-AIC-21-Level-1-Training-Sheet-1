@@ -7,6 +7,7 @@ int main(){
     printf("%s",str);
     return 0;
 }
+//2 minutes
 
 int main(){
   //here it would absorb only one word
