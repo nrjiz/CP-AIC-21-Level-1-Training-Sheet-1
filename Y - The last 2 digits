@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    long long A, B, C, D;
+    cin >> A >> B >> C >> D;
+    
+    A%=100;
+    B%=100;
+    C%=100;
+    D%=100;
+ 
+ 
+    long long result =(A*B*C*D)%100;
+    
+    printf("%02lld\n", result);
+    
+    return 0;
+}
+////////
+#include<iostream>
+int main(){
+    
+    int a,b,c,d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    a%=100;
+    b%=100;
+    c%=100;
+    d%=100;
+    int result = a*b*c*d;
+    if(result % 100 <= 9){
+		std::cout<<"0"<<result % 100;// 01
+	} else {
+		std::cout<<result % 100;
+	}
+}
