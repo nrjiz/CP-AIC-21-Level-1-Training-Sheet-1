@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////
+
+#include<iostream>
+#include<cmath>
+
+int main(){
+    
+    int n;
+    scanf("%d",&n);
+    
+    int counter=2;
+    while(counter<=n){
+        bool isPrime=true;
+        for(int i=2;i<=sqrt(counter);++i){
+            
+            if(counter%i==0){
+                isPrime=false;
+                break;
+            }
+        }
+        if(isPrime){
+            printf("%d ",counter);
+        }
+        ++counter;
+    }
+    return 0;
+}
