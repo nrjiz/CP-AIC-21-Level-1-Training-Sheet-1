@@ -14,3 +14,4 @@ int main(){
     }
     printf("Even: %d\nOdd: %d\nPositive: %d\nNegative: %d\n",even,odd,positive,negative);
 }
+//4:18//3:38//3:06
